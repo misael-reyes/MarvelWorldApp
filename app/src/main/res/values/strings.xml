@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Marvel World</string>
+
+    <!--
+    titles for menu items
+    -->
+    <string name="menu_character">Characters</string>
+    <string name="menu_comic">Comics</string>
+    <string name="menu_serie">Series</string>
+
+    <!--
+    recursos para el fragment characters
+    -->
+    <string name="attribution">Data provided by Marvel. © 2014 Marvel</string>
+    <string name="description">imagen</string>
+
+    <!--
+    recursos para el fragment de detail character
+    -->
+    <string name="title_comics">Comics</string>
+    <string name="title_series">Series</string>
+    <string name="name_character">Super Hero</string>
+    <string name="description_character">Description Character</string>
+
+    <string name="search">Search</string>
+</resources>

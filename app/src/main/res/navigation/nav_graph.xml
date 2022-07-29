@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/charactersFragment">
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.marvelworldapp.iu.characters.list.CharactersFragment"
+        android:label="Characters"
+        tools:layout="@layout/characters_fragment" >
+        <action
+            android:id="@+id/action_charactersFragment_to_detailCharacterFragment"
+            app:destination="@id/detailCharacterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.example.marvelworldapp.iu.series.list.SeriesFragment"
+        android:label="Series"
+        tools:layout="@layout/series_fragment" >
+        <action
+            android:id="@+id/action_seriesFragment_to_detailSeriesFragment"
+            app:destination="@id/detailSeriesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/comicsFragment"
+        android:name="com.example.marvelworldapp.iu.comics.list.ComicsFragment"
+        android:label="Comics"
+        tools:layout="@layout/comics_fragment" >
+        <action
+            android:id="@+id/action_comicsFragment_to_detailComicFragment"
+            app:destination="@id/detailComicFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailCharacterFragment"
+        android:name="com.example.marvelworldapp.iu.characters.detail.DetailCharacterFragment"
+        android:label="detail_character_fragment"
+        tools:layout="@layout/detail_character_fragment" >
+        <argument
+            android:name="id_character"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailComicFragment"
+        android:name="com.example.marvelworldapp.iu.comics.detail.DetailComicFragment"
+        android:label="detail_comic_fragment"
+        tools:layout="@layout/detail_comic_fragment" >
+        <argument
+            android:name="id_comic"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailSeriesFragment"
+        android:name="com.example.marvelworldapp.iu.series.detail.DetailSeriesFragment"
+        android:label="detail_series_fragment"
+        tools:layout="@layout/detail_series_fragment" >
+        <argument
+            android:name="id_series"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+</navigation>
