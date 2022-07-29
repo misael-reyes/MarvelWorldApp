@@ -16,8 +16,8 @@ class Constants {
         val timeStamp = Timestamp(System.currentTimeMillis()).time.toString()
 
         // para obtener nuestras key, es necesario crear una cuenta en https://developer.marvel.com/
-        const val API_KEY = "815f955e39b3e6b25878c2e4ec01d515"
-        const val PRIVATE_KEY = "35f6c6f335a2596a284416fa2d12affadd5ab7cf"
+        const val API_KEY = ""
+        const val PRIVATE_KEY = ""
 
         const val limit = "20"
 
